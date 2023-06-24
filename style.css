@@ -7,10 +7,14 @@
   margin: 0;
 }
 
+.container {
+  height: 100%;
+}
+
 .row {
   width: 100%;
   margin: 0 auto;
-  padding: 32px;
+  padding: 40px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -109,7 +113,7 @@ HEADER
 }
 
 .row__header {
-  padding: 96px 32px;
+  padding: 96px 40px;
 
 }
 
@@ -191,14 +195,139 @@ FEATURES
 
 */
 
-.features__description {
-  display: contents;
+#features {
+  padding: 96px 0;
+}
+
+.features__wrapper {
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features__columns{
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
+}
+
+.features__column {
+  padding: 32px 8px;
+  width: calc(100%/3);
+  display: flex;
+}
+
+.features__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.features__description--subheading {
+  margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .features__description--heading {
   font-size: 48px;
+  font-weight: 700;
+}
+
+.features__description--para {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 575px;
+  font-size: 18px;
+  color: #7c8ba1;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features__img--container {
+  padding: 20px;
+  border: solid rgb(226, 232, 240);
+  border-radius: 70px;
+}
+
+.feature__img {
+  height: 24px;
+  text-decoration: none;
+  
+}
+
+.features__column--text {
+  margin-left: 16px;
+  max-width: 215px;
+}
+
+.features__column--text-title {
+  color: #243e63;
+}
+
+.features__column--text-para {
+  margin-top: 16px;
+  color: #7c8ba1;
+  line-height: 2.0;
+}
+
+/*
+
+QUALITY
+
+*/
+
+#quality {
+  padding: 96px 0;
+}
+
+.quality__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quality__column-1 {
+  width: 100%;
+  max-width: 560px;
+}
+
+.quality__description--subheading {
+  font-size: 16px;
+}
+
+.quality__description--heading {
+  font-size: 48px;
+  color: #243e63;
+  margin-top: 16px;
+}
+
+.quality__description--para {
+  color: #7c8ba1;
+  margin-top: 16px;
+  line-height: 2.0;
+}
+
+.quality__btn {
+  margin-top: 32px;
+}
+
+.quality__column-2 {
+  width: calc(100%/2);
+}
+
+.quality__img--wrapper {
+  width: 100%;
+}
+
+.quality__img {
+  width: 100%;
 }
 
