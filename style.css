@@ -13,6 +13,7 @@
 
 .row {
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 40px;
   height: 100%;
@@ -118,7 +119,11 @@ HEADER
 }
 
 .column-1 {
-  width: 42%;
+  width: 40%;
+}
+
+.column-2 {
+  width: 60%;
 }
 
 .header__title {
@@ -140,6 +145,7 @@ HEADER
   border-style: solid;
   border-radius: 40px;
   border-color: rgb(226, 232, 240);
+  position: relative;
 }
 
 .header__form:focus-within {
@@ -147,9 +153,13 @@ HEADER
 }
 
 .header__input {
-  flex-grow: 2;
-  padding: 20px 192px 20px 32px;
-  border: none;
+  border: 2px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 20px 0 20px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #243e63;
+  width: 100%;
 }
 
 ::placeholder {
@@ -162,7 +172,21 @@ HEADER
 }
 
 .header__btn {
-  margin: 8px 8px 8px 0;
+  background-color: #6415ff;
+    border: none;
+    border-radius: 9999px;
+    right: 0;
+    margin: 8px 8px 8px 0;
+    padding: 14px 0;
+    width: 160px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: 300ms;
 }
 
 .header__logo-strip {
@@ -257,8 +281,8 @@ FEATURES
 }
 
 .feature__img {
-  height: 24px;
-  text-decoration: none;
+  height: auto;
+  width: 24px;
   
 }
 
@@ -295,7 +319,7 @@ QUALITY
 }
 
 .quality__column-1 {
-  width: 100%;
+  width: 50%;
   max-width: 560px;
 }
 
@@ -320,7 +344,7 @@ QUALITY
 }
 
 .quality__column-2 {
-  width: calc(100%/2);
+  width: 50%;
 }
 
 .quality__img--wrapper {
@@ -331,3 +355,71 @@ QUALITY
   width: 100%;
 }
 
+/*
+
+STEPS
+
+*/
+
+#steps {
+  padding: 96px 0;
+}
+
+.steps__columns {
+  display: flex;
+  width: 100%;
+}
+
+.steps__column-1 {
+  width: 50%;
+}
+
+.steps__img--wrapper {
+  width: 100%;
+  
+}
+
+.steps__img {
+  width: 100%;
+  max-width: 640px;
+}
+
+.steps__column-2 {
+  width: 50%;
+  padding-left: 36px;
+}
+
+.steps__subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.steps__title {
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+
+.steps__step {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.number {
+  color: #cbd530;
+  font-size: 36px;
+}
+
+.steps__step--text {
+  margin-left: 16px;
+}
+
+.step__heading {
+  font-size: 20px;
+  color: #243e63;
+  margin-bottom: 8px;
+}
+
+.step__description {
+  font-size: 14px;
+  color: #718096;
+}
