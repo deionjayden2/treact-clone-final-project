@@ -813,6 +813,82 @@ TESTIMONIALS
   font-weight: 700;
 }
 
+/*
+
+DEVELOPERS
+
+*/
+
+#developers {
+  padding: 96px 0;
+}
+
+.developers__text--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #6415ff;
+  padding: 100px 0;
+  border-radius: 10px;
+  position: relatives;
+}
+
+.developers__text--wrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.developers__text {
+  color: #f7fafc;
+  font-size: 30px;
+  font-weight: 700;
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.developers__btn--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developers__btn--started {
+  color: #f7fafc;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 32px;
+  padding: 20px 40px;
+  border-radius: 9999px;
+  border: none;
+  background-color: #F56565;
+}
+
+.developers__btn--contact {
+  color: #f7fafc;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 9999px;
+  background-color: #6415ff;
+  border: solid;
+  border-color: rgb(160 174 192);
+  right: 0;
+}
+
+/*
+
+FOOTER
+
+*/
+
+#footer {
+  padding-top: 96px;
+}
+
 
 
 
