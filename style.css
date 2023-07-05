@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   height: 100%;
 }
@@ -29,6 +33,30 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect--blue:after {
+  background-color: #6415ff;
+}
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*
@@ -72,6 +100,7 @@ nav {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 .nav__links {
@@ -85,6 +114,22 @@ li {
   font-size: 14px;
   color: #243e63;
   font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #6415ff;
+}
+
+.nav__link--pricing {
+  color: #243e63;
+  transition: all 300ms ease;
+}
+
+.nav__link--pricing:hover {
+  color: #6415ff;
 }
 
 .nav__link--login {
@@ -102,6 +147,12 @@ li {
   color: #f7fafc;
   font-weight: bold;
   background-color: #6415ff;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3e0f9b;
 }
 
 /* Button Start */
@@ -464,6 +515,7 @@ QUALITY
 
 .quality__btn {
   margin-top: 32px;
+  transition: all 300ms ease;
 }
 
 .quality__column-2 {
@@ -647,6 +699,7 @@ VALUES
 .values__btn {
   margin-top: 48px;
   max-width: 138px;
+  transition: all 300ms ease;
 }
 
 .values__column-2 {
@@ -666,7 +719,7 @@ PRICING
 */
 
 #pricing {
-  padding: 96px 0;
+  padding: 72px 0;
 }
 
 .pricing__row {
@@ -829,6 +882,14 @@ PRICING
   letter-spacing: .05em;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.plan__btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  opacity: 0.8;
 }
 
 .plan__btn--indv {
@@ -993,6 +1054,11 @@ DEVELOPERS
   border-radius: 9999px;
   border: none;
   background-color: #F56565;
+  transition: all 300ms ease;
+}
+
+.developers__btn--started:hover {
+  background-color: #dc4848;
 }
 
 .developers__btn--contact {
@@ -1005,6 +1071,13 @@ DEVELOPERS
   border: solid;
   border-color: rgb(160 174 192);
   right: 0;
+  transition: all 300ms ease;
+}
+
+.developers__btn--contact:hover {
+  background-color: #f7fafc;
+  color: #6415ff;
+  border-color: #f7fafc;
 }
 
 /*
@@ -1032,6 +1105,7 @@ FOOTER
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 
 .footer__links--wrapper{
@@ -1048,6 +1122,12 @@ FOOTER
   font-size: 14px;
   color: #f7fafc;
   margin-top: 12px;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.footer__link:hover {
+  text-decoration: underline 2px;
 }
 
 .footer__link--list {
@@ -1109,6 +1189,11 @@ FOOTER
   padding: 8px;
   background-color: rgb(247 250 252);
   border-radius: 9999px;
+  transition: opacity 300ms ease;
+}
+
+.social__link--wrapper:hover {
+  opacity: 0.8;
 }
 
 .social__link {
