@@ -1055,6 +1055,7 @@ DEVELOPERS
   border: none;
   background-color: #F56565;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .developers__btn--started:hover {
@@ -1072,6 +1073,7 @@ DEVELOPERS
   border-color: rgb(160 174 192);
   right: 0;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .developers__btn--contact:hover {
